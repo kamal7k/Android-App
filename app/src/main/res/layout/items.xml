@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_item"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="#874646"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/item_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 500"
+            android:textStyle="bold"
+            android:textColor="#2B7A2E"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/item_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Best product..."
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+                android:layout_marginRight="20dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
